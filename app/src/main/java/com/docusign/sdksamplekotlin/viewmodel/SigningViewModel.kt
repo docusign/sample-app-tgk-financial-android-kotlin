@@ -1,17 +1,14 @@
 package com.docusign.sdksamplekotlin.viewmodel
 
 import android.content.Context
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.docusign.androidsdk.DocuSign
 import com.docusign.androidsdk.dsmodels.DSEnvelope
 import com.docusign.androidsdk.exceptions.DSSigningException
 import com.docusign.androidsdk.listeners.DSCaptiveSigningListener
-import com.docusign.androidsdk.listeners.DSEnvelopeOfflineSigningListener
 import com.docusign.androidsdk.listeners.DSOfflineSigningListener
 import com.docusign.androidsdk.listeners.DSOnlineSigningListener
-import com.docusign.sdksamplekotlin.fragment.ClientInvestmentFragment
 import com.docusign.sdksamplekotlin.livedata.*
 
 class SigningViewModel : ViewModel() {
@@ -140,7 +137,7 @@ class SigningViewModel : ViewModel() {
 
     fun signCachedEnvelope(context: Context, envelopeId: String) {
         // DS: Offline Signing using local envelopeId
-        signingDelegate.signOffline(context, envelopeId, object : DSEnvelopeOfflineSigningListener {
+        signingDelegate.signOffline(context, envelopeId, object : DSOfflineSigningListener {
 
             override fun onSuccess(envelopeId: String) {
                 val cachedEnvelopeSigningModel = CachedEnvelopeSigningModel(Status.COMPLETE, null)

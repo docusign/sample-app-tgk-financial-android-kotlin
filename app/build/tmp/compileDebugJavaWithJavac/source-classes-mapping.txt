@@ -1,2 +1,0 @@
-com/docusign/sdksamplekotlin/BuildConfig.java
- com.docusign.sdksamplekotlin.BuildConfig
