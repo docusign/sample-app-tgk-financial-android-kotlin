@@ -25,14 +25,17 @@
         <activity
             android:name=".activity.HomeActivity"
             android:label="@string/home"
+            android:exported="true"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.AgreementActivity"
             android:label="@string/agreement"
+            android:exported="true"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.SettingsActivity"
             android:label="@string/settings"
+            android:exported="true"
             android:screenOrientation="portrait"/>
         <activity android:name=".activity.NewPresentationActivity" />
     </application>
