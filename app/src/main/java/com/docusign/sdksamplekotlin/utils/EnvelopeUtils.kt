@@ -184,7 +184,7 @@ object EnvelopeUtils {
             val document = DSDocument.Builder()
                 .documentId(1)
                 .uri(fileURI.toString())
-                .name("TGK Capital Portfolio B Agreement")
+                .name("Android Finance Portfolio B Agreement")
                 .build()
             documents.add(document)
             val tabs = createInvestmentAgreementTabs(client)
@@ -211,7 +211,7 @@ object EnvelopeUtils {
                 val accreditedInvestorVerificationDocument = DSDocument.Builder()
                     .documentId(2)
                     .uri(accreditedInvestorVerificationFileURI.toString())
-                    .name("TGK Capital Portfolio B Agreement")
+                    .name("Android Finance Portfolio B Agreement")
                     .build()
                 documents.add(accreditedInvestorVerificationDocument)
                 val accreditedInvestorVerificationTabs = createAccreditedInvestorVerificationTabs(accreditedInvestorVerification)
@@ -239,7 +239,7 @@ object EnvelopeUtils {
             )
             // DS: Envelope creation
             return DSEnvelope.Builder()
-                .envelopeName("TGK Capital Portfolio B Agreement")
+                .envelopeName("Android Finance Portfolio B Agreement")
                 .documents(documents)
                 .recipients(recipients)
                 .textCustomFields( // this is for free-form metadata

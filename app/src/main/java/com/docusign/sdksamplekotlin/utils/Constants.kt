@@ -19,8 +19,8 @@ internal object Constants {
     const val REDIRECT_URI_PREF = "redirect_uri"
 
 
-    const val PORTFOLIO_A_DOCUMENT_FILE_NAME = "TGK-Capital-PortfolioA-Agreement.pdf"
-    const val PORTFOLIO_B_DOCUMENT_FILE_NAME = "TGK-Capital-PortfolioB-Agreement.pdf"
+    const val PORTFOLIO_A_DOCUMENT_FILE_NAME = "Android-Finance-PortfolioA-Agreement.pdf"
+    const val PORTFOLIO_B_DOCUMENT_FILE_NAME = "Android-Finance-PortfolioB-Agreement.pdf"
     const val ACCREDITED_INVESTOR_VERIFICATION_FILE_NAME = "Accredited-Investor-Verification.pdf"
     object TemplateConstants {
         object PortfolioA {
